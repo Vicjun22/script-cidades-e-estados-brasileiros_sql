@@ -6,7 +6,8 @@ CREATE TABLE IF NOT EXISTS TbEstado (
 	nm_estado 	VARCHAR(255) 	NOT NULL,
 	uf_estado 	CHAR(2) 	NOT NULL,
 	nm_capital	VARCHAR(255) 	NOT NULL,
-	nm_regiao	VARCHAR(50) 	NOT NULL
+	nm_regiao	VARCHAR(50) 	NOT NULL,
+	nu_ddd		INT[]		NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS TbCidade (
@@ -20,34 +21,34 @@ CREATE TABLE IF NOT EXISTS TbCidade (
 
 ---------- INICIO INCLUSAO DE DADOS NA TBESTADO ----------
 
-INSERT INTO TbEstado (cd_estado, nm_estado, uf_estado, nm_capital, nm_regiao) VALUES 
-	(11, 'Rondônia',            'RO', 'Porto Velho',      'Norte'),
-	(12, 'Acre',                'AC', 'Rio Branco',       'Norte'),
-	(13, 'Amazonas',            'AM', 'Manaus',           'Norte'),
-	(14, 'Roraima',             'RR', 'Boa Vista',        'Norte'),
-	(15, 'Pará',                'PA', 'Belém',            'Norte'),
-	(16, 'Amapá',               'AP', 'Macapá',           'Norte'),
-	(17, 'Tocantins',           'TO', 'Palmas',           'Norte'),
-	(21, 'Maranhão',            'MA', 'São Luís',         'Nordeste'),
-	(22, 'Piauí',               'PI', 'Teresina',         'Nordeste'),
-	(23, 'Ceará',               'CE', 'Fortaleza',        'Nordeste'),
-	(24, 'Rio Grande do Norte', 'RN', 'Natal',            'Nordeste'),
-	(25, 'Paraíba',             'PB', 'João Pessoa',      'Nordeste'),
-	(26, 'Pernambuco',          'PE', 'Recife',           'Nordeste'),
-	(27, 'Alagoas',             'AL', 'Maceió',           'Nordeste'),
-	(28, 'Sergipe',             'SE', 'Aracaju',          'Nordeste'),
-	(29, 'Bahia',               'BA', 'Salvador',         'Nordeste'),
-	(31, 'Minas Gerais',        'MG', 'Belo Horizonte',   'Sudeste'),
-	(32, 'Espírito Santo',      'ES', 'Vitória',          'Sudeste'),
-	(33, 'Rio de Janeiro',      'RJ', 'Rio de Janeiro',   'Sudeste'),
-	(35, 'São Paulo',           'SP', 'São Paulo',        'Sudeste'),
-	(41, 'Paraná',              'PR', 'Curitiba',         'Sul'),
-	(42, 'Santa Catarina',      'SC', 'Florianópolis',    'Sul'),
-	(43, 'Rio Grande do Sul',   'RS', 'Porto Alegre',     'Sul'),
-	(50, 'Mato Grosso do Sul',  'MS', 'Campo Grande',     'Centro-Oeste'),
-	(51, 'Mato Grosso',         'MT', 'Cuiabá',           'Centro-Oeste'),
-	(52, 'Goiás',               'GO', 'Goiânia',          'Centro-Oeste'),
-	(53, 'Distrito Federal',    'DF', 'Brasília',         'Centro-Oeste');
+INSERT INTO TbEstado (cd_estado, nm_estado, uf_estado, nm_capital, nm_regiao, nu_ddd) VALUES 
+	(11, 'Rondônia',            'RO', 'Porto Velho',      'Norte',		ARRAY[69]),
+	(12, 'Acre',                'AC', 'Rio Branco',       'Norte',		ARRAY[68]),
+	(13, 'Amazonas',            'AM', 'Manaus',           'Norte',		ARRAY[92]),
+	(14, 'Roraima',             'RR', 'Boa Vista',        'Norte',		ARRAY[95]),
+	(15, 'Pará',                'PA', 'Belém',            'Norte',		ARRAY[91, 93, 94]),
+	(16, 'Amapá',               'AP', 'Macapá',           'Norte',		ARRAY[96]),
+	(17, 'Tocantins',           'TO', 'Palmas',           'Norte',		ARRAY[63]),
+	(21, 'Maranhão',            'MA', 'São Luís',         'Nordeste',	ARRAY[98]),
+	(22, 'Piauí',               'PI', 'Teresina',         'Nordeste',	ARRAY[86]),
+	(23, 'Ceará',               'CE', 'Fortaleza',        'Nordeste',	ARRAY[85]),
+	(24, 'Rio Grande do Norte', 'RN', 'Natal',            'Nordeste',	ARRAY[84]),
+	(25, 'Paraíba',             'PB', 'João Pessoa',      'Nordeste',	ARRAY[83]),
+	(26, 'Pernambuco',          'PE', 'Recife',           'Nordeste',	ARRAY[81, 87]),
+	(27, 'Alagoas',             'AL', 'Maceió',           'Nordeste',	ARRAY[82]),
+	(28, 'Sergipe',             'SE', 'Aracaju',          'Nordeste',	ARRAY[79]),
+	(29, 'Bahia',               'BA', 'Salvador',         'Nordeste',	ARRAY[71, 73, 74, 75, 77]),
+	(31, 'Minas Gerais',        'MG', 'Belo Horizonte',   'Sudeste',	ARRAY[31, 32, 33, 34, 35, 37, 38]),
+	(32, 'Espírito Santo',      'ES', 'Vitória',          'Sudeste',	ARRAY[27, 28]),
+	(33, 'Rio de Janeiro',      'RJ', 'Rio de Janeiro',   'Sudeste',	ARRAY[21, 22, 24]),
+	(35, 'São Paulo',           'SP', 'São Paulo',        'Sudeste',	ARRAY[11, 12, 13, 14, 15, 16, 17, 18, 19]),
+	(41, 'Paraná',              'PR', 'Curitiba',         'Sul',		ARRAY[41]),
+	(42, 'Santa Catarina',      'SC', 'Florianópolis',    'Sul',		ARRAY[47]),
+	(43, 'Rio Grande do Sul',   'RS', 'Porto Alegre',     'Sul',		ARRAY[51]),
+	(50, 'Mato Grosso do Sul',  'MS', 'Campo Grande',     'Centro-Oeste',	ARRAY[67]),
+	(51, 'Mato Grosso',         'MT', 'Cuiabá',           'Centro-Oeste',	ARRAY[65]),
+	(52, 'Goiás',               'GO', 'Goiânia',          'Centro-Oeste',	ARRAY[62, 64]),
+	(53, 'Distrito Federal',    'DF', 'Brasília',         'Centro-Oeste',	ARRAY[61]);
 
 ---------- FIM INCLUSAO DE DADOS NA TBESTADO ----------
 
