@@ -36,6 +36,7 @@ Caso o script não funcione em algum desses bancos de dados, fique à vontade pa
 | `uf_estado`    | UF do Estado              | Caractere                        |
 | `nm_capital`   | Nome da Capital           | Texto                            |
 | `nm_regiao`    | Nome da Região            | Texto                            |
+| `nu_ddd`       | DDD do Estado             | Array de inteiros                |
 | `cd_id`        | Código ID (identificador) | Inteiro                          |
 | `nm_cidade`    | Nome da Cidade            | Texto                            |
 | `cd_ibge`      | Código do IBGE            | Inteiro                          |
