@@ -20,27 +20,25 @@ O script SQL realiza as seguintes ações:
 O script foi desenvolvido em SQL, utilizando um padrão compatível com os seguintes sistemas de gerenciamento de banco de dados:
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23336791.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)  
-[![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?logo=mysql&logoColor=white)](https://www.mysql.com/)  
-[![SQLite](https://img.shields.io/badge/SQLite-%23003B57.svg?logo=sqlite&logoColor=white)](https://www.sqlite.org/)  
-[![Oracle](https://img.shields.io/badge/Oracle-%23F80000.svg?logo=oracle&logoColor=white)](https://www.oracle.com/database/)  
-[![Microsoft SQL Server](https://img.shields.io/badge/SQL%20Server-%23CC2927.svg?logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/sql-server)  
+[![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?logo=mysql&logoColor=white)](https://www.mysql.com/)
 
 Caso o script não funcione em algum desses bancos de dados, fique à vontade para abrir uma issue.
 
 ## Significado dos nomes das colunas
 
-| Nome da Coluna | Significado               | Tipo do Campo                    |
-| -------------- | ------------------------- | -------------------------------- |
-| `cd_estado`    | Código do Estado          | Inteiro                          |
-| `nm_estado`    | Nome do Estado            | Texto                            |
-| `uf_estado`    | UF do Estado              | Caractere                        |
-| `nm_capital`   | Nome da Capital           | Texto                            |
-| `nm_regiao`    | Nome da Região            | Texto                            |
-| `nu_ddd`       | DDD do Estado             | Array de inteiros                |
-| `cd_id`        | Código ID (identificador) | Inteiro                          |
-| `nm_cidade`    | Nome da Cidade            | Texto                            |
-| `cd_ibge`      | Código do IBGE            | Inteiro                          |
-| `is_capital`   | É capital?                | Verdadeiro ou Falso (booleano)   |
+| Nome da Coluna | Significado                  | Tipo do Campo                    |
+| -------------- | ---------------------------- | -------------------------------- |
+| `cd_estado`    | Código do Estado             | Inteiro                          |
+| `nm_estado`    | Nome do Estado               | Texto                            |
+| `uf_estado`    | UF do Estado                 | Caractere                        |
+| `nm_capital`   | Nome da Capital              | Texto                            |
+| `nm_regiao`    | Nome da Região               | Texto                            |
+| `nu_ddd`       | DDD do Estado                | Array de inteiros                |
+| `lk_bandeiras` | Link das bandeiras do estado | Texto                            |
+| `cd_id`        | Código ID (identificador)    | Inteiro                          |
+| `nm_cidade`    | Nome da Cidade               | Texto                            |
+| `cd_ibge`      | Código do IBGE               | Inteiro                          |
+| `is_capital`   | É capital?                   | Verdadeiro ou Falso (booleano)   |
 
 ## Como usar?
 
