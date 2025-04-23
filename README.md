@@ -26,19 +26,20 @@ Caso o script não funcione em algum desses bancos de dados, fique à vontade pa
 
 ## Significado dos nomes das colunas
 
-| Nome da Coluna | Significado                  | Tipo do Campo                    |
-| -------------- | ---------------------------- | -------------------------------- |
-| `cd_estado`    | Código do Estado             | Inteiro                          |
-| `nm_estado`    | Nome do Estado               | Texto                            |
-| `uf_estado`    | UF do Estado                 | Caractere                        |
-| `nm_capital`   | Nome da Capital              | Texto                            |
-| `nm_regiao`    | Nome da Região               | Texto                            |
-| `nu_ddd`       | DDD do Estado                | Array de inteiros                |
-| `lk_bandeiras` | Link das bandeiras do estado | Texto                            |
-| `cd_id`        | Código ID (identificador)    | Inteiro                          |
-| `nm_cidade`    | Nome da Cidade               | Texto                            |
-| `cd_ibge`      | Código do IBGE               | Inteiro                          |
-| `is_capital`   | É capital?                   | Verdadeiro ou Falso (booleano)   |
+| Nome da Coluna           | Significado                  | Tipo do Campo                    |
+| ------------------------ | ---------------------------- | -------------------------------- |
+| `cd_estado`              | Código do Estado             | Inteiro                          |
+| `nm_estado`              | Nome do Estado               | Texto                            |
+| `uf_estado`              | UF do Estado                 | Caractere                        |
+| `nm_capital`             | Nome da Capital              | Texto                            |
+| `nm_regiao`              | Nome da Região               | Texto                            |
+| `nu_ddd`                 | DDD do Estado                | Array de inteiros                |
+| `nu_area`                | Área do território em km²    | Float                            |
+| `lk_bandeiras`           | Link das bandeiras do estado | Texto                            |
+| `cd_id`                  | Código ID (identificador)    | Inteiro                          |
+| `nm_cidade`              | Nome da Cidade               | Texto                            |
+| `cd_ibge`                | Código do IBGE               | Inteiro                          |
+| `is_capital`             | É capital?                   | Verdadeiro ou Falso (booleano)   |
 
 ## Como usar?
 
