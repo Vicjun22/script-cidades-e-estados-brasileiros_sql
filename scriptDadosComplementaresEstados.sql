@@ -45,45 +45,45 @@ UPDATE TbEstado SET lk_bandeiras = 'https://atlasescolar.ibge.gov.br/images/band
 
 
 ALTER TABLE TbEstado
-DROP COLUMN IF EXISTS nm_area-km-quadrados;
+DROP COLUMN IF EXISTS nu_area;
 
----------- INICIO INCLUSAO DA COLUNA NM_AREA-KM-QUADRADOS NA TBESTADO ----------
+---------- INICIO INCLUSAO DA COLUNA NU_AREA NA TBESTADO ----------
 
 ALTER TABLE TbEstado
-ADD COLUMN nm_area-km-quadrados VARCHAR(255);
+ADD COLUMN nu_area FLOAT;
 
----------- FIM INCLUSAO DA COLUNA NM_AREA-KM-QUADRADOS NA TBESTADO ----------
+---------- FIM INCLUSAO DA COLUNA NU_AREA NA TBESTADO ----------
 
 
 
 ---------- INICIO INCLUSAO DE DADOS NA TBESTADO ----------
 
-UPDATE TbEstado SET nm_area-km-quadrados = '237754.171' WHERE cd_estado = 11;
-UPDATE TbEstado SET nm_area-km-quadrados = '164173.525' WHERE cd_estado = 12;
-UPDATE TbEstado SET nm_area-km-quadrados = '1559256.365' WHERE cd_estado = 13;
-UPDATE TbEstado SET nm_area-km-quadrados = '223644.534' WHERE cd_estado = 14;
-UPDATE TbEstado SET nm_area-km-quadrados = '1245870.242' WHERE cd_estado = 15;
-UPDATE TbEstado SET nm_area-km-quadrados = '142470.762' WHERE cd_estado = 16;
-UPDATE TbEstado SET nm_area-km-quadrados = '277423.627' WHERE cd_estado = 17;
-UPDATE TbEstado SET nm_area-km-quadrados = '329651.495' WHERE cd_estado = 21;
-UPDATE TbEstado SET nm_area-km-quadrados = '251755.481' WHERE cd_estado = 22;
-UPDATE TbEstado SET nm_area-km-quadrados = '148894.447' WHERE cd_estado = 23;
-UPDATE TbEstado SET nm_area-km-quadrados = '52809.599' WHERE cd_estado = 24;
-UPDATE TbEstado SET nm_area-km-quadrados = '56467.242' WHERE cd_estado = 25;
-UPDATE TbEstado SET nm_area-km-quadrados = '98067.877' WHERE cd_estado = 26;
-UPDATE TbEstado SET nm_area-km-quadrados = '27830.661' WHERE cd_estado = 27;
-UPDATE TbEstado SET nm_area-km-quadrados = '21938.188' WHERE cd_estado = 28;
-UPDATE TbEstado SET nm_area-km-quadrados = '564760.429' WHERE cd_estado = 29;
-UPDATE TbEstado SET nm_area-km-quadrados = '586513.984' WHERE cd_estado = 31;
-UPDATE TbEstado SET nm_area-km-quadrados = '46074.448' WHERE cd_estado = 32;
-UPDATE TbEstado SET nm_area-km-quadrados = '43750.425' WHERE cd_estado = 33;
-UPDATE TbEstado SET nm_area-km-quadrados = '248219.485' WHERE cd_estado = 35;
-UPDATE TbEstado SET nm_area-km-quadrados = '199298.981' WHERE cd_estado = 41;
-UPDATE TbEstado SET nm_area-km-quadrados = '95730.690' WHERE cd_estado = 42;
-UPDATE TbEstado SET nm_area-km-quadrados = '281707.150' WHERE cd_estado = 43;
-UPDATE TbEstado SET nm_area-km-quadrados = '357142.010' WHERE cd_estado = 50;
-UPDATE TbEstado SET nm_area-km-quadrados = '903208.362' WHERE cd_estado = 51;
-UPDATE TbEstado SET nm_area-km-quadrados = '340242.860' WHERE cd_estado = 52;
-UPDATE TbEstado SET nm_area-km-quadrados = '5760.783' WHERE cd_estado = 53;
+UPDATE TbEstado SET nu_area = '237754.171' WHERE cd_estado = 11;
+UPDATE TbEstado SET nu_area = '164173.525' WHERE cd_estado = 12;
+UPDATE TbEstado SET nu_area = '1559256.365' WHERE cd_estado = 13;
+UPDATE TbEstado SET nu_area = '223644.534' WHERE cd_estado = 14;
+UPDATE TbEstado SET nu_area = '1245870.242' WHERE cd_estado = 15;
+UPDATE TbEstado SET nu_area = '142470.762' WHERE cd_estado = 16;
+UPDATE TbEstado SET nu_area = '277423.627' WHERE cd_estado = 17;
+UPDATE TbEstado SET nu_area = '329651.495' WHERE cd_estado = 21;
+UPDATE TbEstado SET nu_area = '251755.481' WHERE cd_estado = 22;
+UPDATE TbEstado SET nu_area = '148894.447' WHERE cd_estado = 23;
+UPDATE TbEstado SET nu_area = '52809.599' WHERE cd_estado = 24;
+UPDATE TbEstado SET nu_area = '56467.242' WHERE cd_estado = 25;
+UPDATE TbEstado SET nu_area = '98067.877' WHERE cd_estado = 26;
+UPDATE TbEstado SET nu_area = '27830.661' WHERE cd_estado = 27;
+UPDATE TbEstado SET nu_area = '21938.188' WHERE cd_estado = 28;
+UPDATE TbEstado SET nu_area = '564760.429' WHERE cd_estado = 29;
+UPDATE TbEstado SET nu_area = '586513.984' WHERE cd_estado = 31;
+UPDATE TbEstado SET nu_area = '46074.448' WHERE cd_estado = 32;
+UPDATE TbEstado SET nu_area = '43750.425' WHERE cd_estado = 33;
+UPDATE TbEstado SET nu_area = '248219.485' WHERE cd_estado = 35;
+UPDATE TbEstado SET nu_area = '199298.981' WHERE cd_estado = 41;
+UPDATE TbEstado SET nu_area = '95730.690' WHERE cd_estado = 42;
+UPDATE TbEstado SET nu_area = '281707.150' WHERE cd_estado = 43;
+UPDATE TbEstado SET nu_area = '357142.010' WHERE cd_estado = 50;
+UPDATE TbEstado SET nu_area = '903208.362' WHERE cd_estado = 51;
+UPDATE TbEstado SET nu_area = '340242.860' WHERE cd_estado = 52;
+UPDATE TbEstado SET nu_area = '5760.783' WHERE cd_estado = 53;
 
 ---------- FIM INCLUSAO DE DADOS NA TBESTADO ----------
