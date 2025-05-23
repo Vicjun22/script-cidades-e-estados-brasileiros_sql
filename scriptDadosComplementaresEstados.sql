@@ -87,3 +87,50 @@ UPDATE TbEstado SET nu_area = '340242.860' WHERE cd_estado = 52;
 UPDATE TbEstado SET nu_area = '5760.783' WHERE cd_estado = 53;
 
 ---------- FIM INCLUSAO DE DADOS NA TBESTADO ----------
+
+
+
+ALTER TABLE TbEstado
+DROP COLUMN IF EXISTS nm_clima;
+
+---------- INICIO INCLUSAO DA COLUNA NU_CLIMA NA TBESTADO ----------
+
+ALTER TABLE TbEstado
+ADD COLUMN nm_clima VARCHAR(75)[];
+
+---------- FIM INCLUSAO DA COLUNA NU_CLIMA NA TBESTADO ----------
+
+
+
+---------- INICIO INCLUSAO DE DADOS NA TBESTADO ----------
+
+UPDATE TbEstado SET nm_clima = ARRAY['Equatorial úmido'] WHERE cd_estado = 11;
+UPDATE TbEstado SET nm_clima = ARRAY['Equatorial úmido'] WHERE cd_estado = 12;
+UPDATE TbEstado SET nm_clima = ARRAY['Equatorial'] WHERE cd_estado = 13;
+UPDATE TbEstado SET nm_clima = ARRAY['Equatorial'] WHERE cd_estado = 14;
+UPDATE TbEstado SET nm_clima = ARRAY['Equatorial'] WHERE cd_estado = 15;
+UPDATE TbEstado SET nm_clima = ARRAY['Equatorial úmido'] WHERE cd_estado = 16; 
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical', 'Equatorial'] WHERE cd_estado = 17;
+UPDATE TbEstado SET nm_clima = ARRAY['Equatorial', 'Tropical', 'Semiárido'] WHERE cd_estado = 21;
+UPDATE TbEstado SET nm_clima = ARRAY['Semiárido', 'Tropical'] WHERE cd_estado = 22;
+UPDATE TbEstado SET nm_clima = ARRAY['Semiárido'] WHERE cd_estado = 23;
+UPDATE TbEstado SET nm_clima = ARRAY['Semiárido', 'Tropical úmido'] WHERE cd_estado = 24;
+UPDATE TbEstado SET nm_clima = ARRAY['Semiárido', 'Tropical úmido'] WHERE cd_estado = 25;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical', 'Semiárido'] WHERE cd_estado = 26;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical úmido'] WHERE cd_estado = 27;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical úmido'] WHERE cd_estado = 28;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical', 'Tropical úmido', 'Semiárido'] WHERE cd_estado = 29;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical', 'Tropical de altitude', 'Subtropical'] WHERE cd_estado = 31;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical úmido'] WHERE cd_estado = 32;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical úmido', 'Tropical de altitude'] WHERE cd_estado = 33;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical de altitude', 'Subtropical'] WHERE cd_estado = 35;
+UPDATE TbEstado SET nm_clima = ARRAY['Subtropical úmido'] WHERE cd_estado = 41;
+UPDATE TbEstado SET nm_clima = ARRAY['Subtropical'] WHERE cd_estado = 42;
+UPDATE TbEstado SET nm_clima = ARRAY['Subtropical'] WHERE cd_estado = 43;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical'] WHERE cd_estado = 50;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical'] WHERE cd_estado = 51;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical'] WHERE cd_estado = 52;
+UPDATE TbEstado SET nm_clima = ARRAY['Tropical de altitude'] WHERE cd_estado = 53;
+
+
+---------- FIM INCLUSAO DE DADOS NA TBESTADO ----------
