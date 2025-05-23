@@ -36,6 +36,7 @@ Caso o script não funcione em algum desses bancos de dados, fique à vontade pa
 | `nu_ddd`                 | DDD do Estado                | Array de inteiros                |
 | `nu_area`                | Área do território em km²    | Float                            |
 | `lk_bandeiras`           | Link das bandeiras do estado | Texto                            |
+| `nm_clima`               | Clima(s) do estado           | Array de texto                   |
 | `cd_id`                  | Código ID (identificador)    | Inteiro                          |
 | `nm_cidade`              | Nome da Cidade               | Texto                            |
 | `cd_ibge`                | Código do IBGE               | Inteiro                          |
